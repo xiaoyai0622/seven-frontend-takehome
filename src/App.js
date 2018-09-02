@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Thumbnail from './Thumbnail';
-
+import './main.css';
 // react root component
 
 class App extends Component {
