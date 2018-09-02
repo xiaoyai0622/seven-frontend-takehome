@@ -19,10 +19,11 @@ const Background = styled.img`
 
 
 class Thumbnail extends Component {
+
 	render() {
 		return (
 			<div>
-				<Background> something interesting</Background>
+				<Background />
 			</div>
 		);
 	}

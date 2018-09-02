@@ -8,12 +8,23 @@
     "styled-components": "^3.4.5"
   },
   "devDependencies": {
+    "jest-styled-components": "^6.1.1",
     "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test/__mocks__/requestAnimationFrame.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
+
 }
